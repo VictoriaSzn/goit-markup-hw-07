@@ -1,0 +1,19 @@
+/*======= верхний лог о======*/
+.logo {
+
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo-header-menu {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header-logo-span {
+    color: var(--header-logo-color);
+}

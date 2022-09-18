@@ -1,0 +1,46 @@
+/*=======================client==================*/
+/*h2*/
+.client-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--text-primary-color);
+    letter-spacing: 0.03em;
+}
+
+/*ul*/
+.client__list {
+    display: flex;
+    gap: 30px;
+}
+/*a*/
+.client__list-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-color);
+   
+    transition: color 250ms var(--bezier),
+                border 250ms var(--bezier);
+
+&:hover,
+&:focus {
+        /* background-color: var(--accent-color) ; */
+        color: var(--accent-color);
+        border: 1px solid var(--accent-color);
+}
+}
+/*цвет и размер иконок по умолчанию*/
+.client__list-icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}
+

@@ -1,0 +1,54 @@
+/*================= особливості =================*/
+
+/*ul*/
+.especially__list{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 30px;
+}
+
+/*li*/
+.especially-item {
+    flex-basis: calc((100% - 90px) / 4);
+
+&::before {
+    display: block;
+    content: "";
+    height: 120px;
+
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--btn-prim-color);
+}    
+}
+
+.icon-antenna::before {
+    background-image: url(../images/svg/antenna.svg);
+}
+
+.icon-clok::before {
+    background-image: url(../images/svg/clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/svg/diagram.svg);
+}
+
+.icon-astronavt::before {
+    background-image: url(../images/svg/astronaut.svg);
+}
+.especially{
+ /*h3*/   
+.title {
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+/*p*/
+.text {
+    line-height: 1.71;
+}}

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Портфоліо</title>
+    <!--modern normalize-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container heder-container">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo logo-header-menu link">
+            <!--ссылка на возврат в начало страницы-->
+            Web<span class="header-logo-span link">Studio</span>
+          </a>
+          <ul class="header-nav-menu">
+            <!--список ссылок навигации по сайту-->
+            <li><a href="./index.html" class="header-nav-menu__link thumb-current link">Студія</a></li>
+            <li>
+              <a href="./portfolio.html" class="header-nav-menu__link current thumb-current link"
+                >Портфоліо</a
+              >
+            </li>
+            <li><a href="" class="header-nav-menu__link thumb-current link">Контакти</a></li>
+          </ul>
+        </nav>
+        <!--список контактов-->
+        <ul class="header-contacts">
+          <li>
+            <a href="mailto:info@devstudio.com" class="header-contacts__link mail link">
+              <svg aria-label="icon mail" class="contacts-icon" width="16" height="12">
+                <use href="./images/svg/sprite.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="header-contacts__link link">
+              <svg aria-label="icon tel" class="contacts-icon" width="10" height="16">
+                <use href="./images/svg/sprite.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!--фильтр-->
+      <section class="portfolio">
+        <!--заголовок не будет отображатся на странице-->
+        <h1 class="visually-hidden">Портфоліо</h1>
+        <div class="container">
+          <ul class="portfolio__btn-list">
+            <li><button type="button" class="portfolio__btn-list-item">Усі</button></li>
+            <li><button type="button" class="portfolio__btn-list-item">Веб-сайт</button></li>
+            <li><button type="button" class="portfolio__btn-list-item">Додатки</button></li>
+            <li><button type="button" class="portfolio__btn-list-item">Дизайн</button></li>
+            <li><button type="button" class="portfolio__btn-list-item">Маркетинг</button></li>
+          </ul>
+          <!--portfolio-->
+          <ul class="portfolio__cards-list">
+            <li class="portfolio__cards-list-item">
+              <a class="portfolio__cards-list-link link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio/img11.jpg"
+                    alt="Приклад сторінки веб-сайту"
+                    width="370"
+                    height="290"
+                  />
+
+                  <p class="portfolio-hover-text portfolio-actions">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу. Технокряк Веб-сайт
+                  </p>
+                </div>
+                <div class="portfolio__cards-title">
+                  <h2 class="title">Технокряк</h2>
+                  <p class="text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__cards-list-item">
+              <a class="portfolio__cards-list-link link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio/img12.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370"
+                    height="290"
+                  />
+                  <p class="portfolio-hover-text portfolio-actions">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу. Технокряк Веб-сайт
+                  </p>
+                </div>
+                <div class="portfolio__cards-title">
+                  <h2 class="title">Постер New Orlean vs Golden Star</h2>
+                  <p class="text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__cards-list-item">
+              <a class="portfolio__cards-list-link link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio/img13.jpg"
+                    alt="Лого ресторану Seafood"
+                    width="370"
+                    height="290"
+                  />
+                  <p class="portfolio-hover-text portfolio-actions">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу. Технокряк Веб-сайт
+                  </p>
+                </div>
+                <div class="portfolio__cards-title">
+                  <h2 class="title">Ресторан Seafood</h2>
+                  <p class="text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__cards-list-item">
+              <a class="portfolio__cards-list-link link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio/img21.jpg"
+                    alt="навушники"
+                    width="370"
+                    height="290"
+                  />
+                  <p class="portfolio-hover-text portfolio-actions">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу. Технокряк Веб-сайт
+                  </p>
+                </div>
+
+                <div class="portfolio__cards-title">
+                  <h2 class="title">Проєкт Prime</h2>
+                  <p class="text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__cards-list-item">
+              <a class="portfolio__cards-list-link link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio/img22.jpg"
+                    alt="Дві коробки біла та бежева"
+                    width="370"
+                    height="290"
+                  />
+                  <p class="portfolio-hover-text portfolio-actions">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу. Технокряк Веб-сайт
+                  </p>
+                </div>
+
+                <div class="portfolio__cards-title">
+                  <h2 class="title">Проєкт Boxes</h2>
+                  <p class="text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__cards-list-item">
+              <a class="portfolio__cards-list-link link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio/img23.jpg"
+                    alt="Монітор з прикладом веб-сайту"
+                    width="370"
+                    height="290"
+                  />
+                  <p class="portfolio-hover-text portfolio-actions">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу. Технокряк Веб-сайт
+                  </p>
+                </div>
+
+                <div class="portfolio__cards-title">
+                  <h2 class="title">Inspiration has no Borders</h2>
+                  <p class="text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__cards-list-item">
+              <a class="portfolio__cards-list-link link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio/img31.jpg"
+                    alt="Розгорнута сторінка журналу Limited Edition"
+                    width="370"
+                    height="290"
+                  />
+                  <p class="portfolio-hover-text portfolio-actions">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу. Технокряк Веб-сайт
+                  </p>
+                </div>
+
+                <div class="portfolio__cards-title">
+                  <h2 class="title">Видання Limited Edition</h2>
+                  <p class="text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__cards-list-item">
+              <a class="portfolio__cards-list-link link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio/img32.jpg"
+                    alt="Біла етикетка з написом Lab el tag"
+                    width="370"
+                    height="290"
+                  />
+                  <p class="portfolio-hover-text portfolio-actions">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу. Технокряк Веб-сайт
+                  </p>
+                </div>
+
+                <div class="portfolio__cards-title">
+                  <h2 class="title">Проєкт LAB</h2>
+                  <p class="text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__cards-list-item">
+              <a class="portfolio__cards-list-link link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio/img33.jpg"
+                    alt="Відкритий ноутбук"
+                    width="370"
+                    height="290"
+                  />
+                  <p class="portfolio-hover-text portfolio-actions">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу. Технокряк Веб-сайт
+                  </p>
+                </div>
+
+                <div class="portfolio__cards-title">
+                  <h2 class="title">Growing Business</h2>
+                  <p class="text">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <!--тег addres-->
+      <div class="container footer__block">
+        <div class="footer__block-logo-address">
+          <a href="./index.html" class="logo link">
+            Web<span class="footer-logo link">Studio</span></a
+          >
+          <address>
+            <ul>
+              <li class="footer-address-list">
+                <a
+                  href="https://goo.gl/maps/6emUorHh679U21bC7"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  class="footer-address link"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                ><!--поставила для rel все три атрибута ШОБ надежнее )))-->
+              </li>
+              <li class="footer-address-list">
+                <a href="mailto:info@devstudio.com" class="footer-contacts mail link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-address-list without-margin">
+                <a href="tel:+380961111111" class="footer-contacts link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__block-social">
+          <p class="footer-title">Приєднуйтесь</p>
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a href="#" class="social-list-link footer">
+                <svg
+                  aria-label="icon instagram"
+                  class="social-list-icon footer"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/svg/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="#" class="social-list-link footer">
+                <svg
+                  aria-label="icon facebook"
+                  class="social-list-icon footer"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/svg/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="#" class="social-list-link footer">
+                <svg
+                  aria-label="icon twitter"
+                  class="social-list-icon footer"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/svg/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="#" class="social-list-link footer">
+                <svg
+                  aria-label="icon linkedin"
+                  class="social-list-icon footer"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/svg/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="footer-form">
+          <p class="footer-form-title">Підпишіться на розсилку</p>
+          <div class="footer-form-subscribe">
+            <label class="footer-form-label">
+              <input
+                type="email"
+                class="footer-form-input"
+                name="mail footer"
+                placeholder="E-mail" required
+              />
+            </label>
+            <button type="submit" class="btn-footer-submit">
+              Підписатися
+              <svg aria-label="icon send" class="icon-send" width="24" height="24">
+                <use href="./images/svg/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

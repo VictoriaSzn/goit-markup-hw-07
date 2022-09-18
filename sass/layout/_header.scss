@@ -1,0 +1,86 @@
+/*============= верхняя менюшка  ============*/
+.heder-container,
+.header-nav,
+.header-nav-menu,
+.header-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-menu {
+    column-gap: 50px;
+}
+
+.header-nav-menu__link,
+.header-contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+/*вариант как отодвинуть майл и тел вправо
+.heder-container{
+    justify-content: space-between;
+}*/
+.header-contacts {
+    margin-left: auto;
+    gap: 50px;
+}
+/*nav a href*/
+.header-nav-menu__link {
+    color: var(--text-primary-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms var(--bezier);
+&:hover,
+&:focus {
+    color: var(--accent-color);
+}
+}
+/*активная страница сайта*/
+.header-nav-menu__link.current {
+    color: var(--accent-color);
+}
+/*------------------------------полоска под каррент--------*/
+/*a*/
+.thumb-current {
+    position: relative;
+
+&::after {
+    display: block;
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    opacity: 0;
+}
+}
+.current.thumb-current::after {
+    opacity: 1;
+}
+/*--------------------------------*/
+.header-contacts__link {
+    display: flex;
+    align-items: center;
+    /* color: inherit; */
+    color: var(--text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms var(--bezier);
+&:hover,
+&:focus {
+    color: var(--accent-color);
+}
+}
+
+.contacts-icon {
+    /* fill: var(--icon-color); */
+    fill: currentColor;
+    margin-right: 10px;
+}
+header {
+    border-bottom: 1px solid var(--header-border-color);
+}

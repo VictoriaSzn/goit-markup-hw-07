@@ -1,0 +1,54 @@
+/*================ footer ================*/
+footer {
+    background-color: var(--footer-color);
+    padding: 60px 0;
+}
+
+address {
+    margin-top: 20px;
+}
+
+.footer-address,
+.footer-contacts {
+    color: var(--white-color);
+    /* font-weight: 400; */
+    line-height: 1.71;
+    font-style: normal;
+    transition: color 250ms var(--bezier);
+}
+
+.footer-contacts {
+    color: var(--footer-contacts-color);
+}
+
+.footer-address:hover,
+.footer-address:focus,
+.footer-contacts:hover,
+.footer-contacts:focus {
+    color: var(--accent-color);
+}
+.footer-address-list {
+    margin-bottom: 9px;
+}
+.without-margin {
+    margin-bottom: 0;
+}
+/*p*/
+.footer-title {
+    margin-bottom: 18px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-color)
+}
+
+/*общий блок футера*/
+.footer__block {
+    display: flex;
+    align-items: baseline;
+}
+
+/*блок адрес*/
+.footer__block-logo-address {
+    margin-right: 70px;
+}
